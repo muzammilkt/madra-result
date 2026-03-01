@@ -1,23 +1,23 @@
 // Student data keyed by class number
 const studentData = {
   1: [
-    "Fathima kanza.P",
+    "Fathima kenza p",
     "Fathima bathool KK",
     "Najwa KT",
     "Ayisha midha M",
-    "Muhammed chishthee P",
+    "Muhammed chisthi P",
     "Muhammed rashid KP",
     "Muhammed misbah P",
     "Muhammed bujair KK",
     "Fathima hamda PA",
     "Fathima fariha K",
-    "Aliya afren P",
+    "Aliya afreen P",
     "Sayyid Muhammed rashid",
     "Ziya Fathima KP"
   ],
   2: [
     "Fathima tahaniya KT",
-    "Rahfa fawad KV",
+    "Rahfa fawas KV",
     "Muhammed fadi KK",
     "Muhammed aziyan T",
     "Rayan saleem K",
@@ -26,17 +26,17 @@ const studentData = {
     "Muhammed mishad KP"
   ],
   3: [
-    "Ahmed muheenuddeen P",
+    "Ahmed mueenudheen P",
     "Ayisha NISMA P",
     "Abeeha Fathima U",
     "Ashiqa zainab KK",
-    "Muhammed Bishr.KK",
+    "Muhammed Bishr KK",
     "Ishal Fathima KM",
     "Muhammed adhil KT",
     "Muhammed shamlaj P",
     "Muhammed rabeeh K",
-    "Abdunafih KP",
-    "Fella Fathima M"
+    "Abdul nafih KP",
+    "fella Fathima M"
   ],
   4: [
     "Naja Fathima K",
@@ -47,7 +47,7 @@ const studentData = {
   ],
   6: [
     "Muhammed rabeeh KK",
-    "Sahilanasren P",
+    "Sahila nasrin P",
     "Fathima lubaba P",
     "Shamil mubarak K",
     "Thanveer KT",
