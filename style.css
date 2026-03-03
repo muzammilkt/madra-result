@@ -413,18 +413,18 @@ body {
   flex-shrink: 0;
 }
 
-/* Gold, Silver, Bronze for top 3 */
-.result-list li:nth-child(1)::before {
+/* Gold, Silver, Bronze for top 3 ranks */
+.result-list li.rank-gold::before {
   background: linear-gradient(135deg, #c5a44e, #e0c974);
   color: var(--white);
 }
 
-.result-list li:nth-child(2)::before {
+.result-list li.rank-silver::before {
   background: linear-gradient(135deg, #8fa5a3, #b0c4c2);
   color: var(--white);
 }
 
-.result-list li:nth-child(3)::before {
+.result-list li.rank-bronze::before {
   background: linear-gradient(135deg, #b87d5b, #d4a07a);
   color: var(--white);
 }

@@ -35,15 +35,13 @@ const studentData = {
     "Muhammed adhil KT",
     "Muhammed shamlaj P",
     "Muhammed rabeeh K",
-    "Abdul nafih KP",
-    "fella Fathima M"
+    "Abdul nafih KP"
   ],
   4: [
     "Naja Fathima K",
     "Fathima janna KC",
     "Fathima sana P",
-    "Fathima riya VT",
-    "Muhammed razan"
+    "Fathima riya VT"
   ],
   6: [
     "Muhammed rabeeh KK",
@@ -74,6 +72,11 @@ const studentData = {
     "Fathima dilfa KP",
     "Fathima rinshana K"
   ]
+};
+
+// Indices (0-based) where rank should NOT increment (tied with previous student)
+const rankTies = {
+  2: [2] // Class 2: index 2 (Muhammed fadi KK) ties with index 1
 };
 
 const availableClasses = [1, 2, 3, 4, 6, 8, 9, 11];
@@ -133,9 +136,20 @@ function showResult(cls) {
   resultHeading.textContent = "Class " + cls;
   resultList.innerHTML = "";
 
+  var ties = rankTies[cls] || [];
+  var rankColors = ["rank-gold", "rank-silver", "rank-bronze"];
+  var currentRank = 0;
   students.forEach(function (name, i) {
     var li = document.createElement("li");
     li.style.animationDelay = i * 0.04 + "s";
+    if (ties.indexOf(i) !== -1) {
+      li.style.counterIncrement = "rank 0";
+    } else {
+      currentRank++;
+    }
+    if (currentRank <= 3) {
+      li.classList.add(rankColors[currentRank - 1]);
+    }
     var span = document.createElement("span");
     span.className = "student-name";
     span.textContent = name;
